@@ -1,0 +1,53 @@
+
+    apt update -y
+    2  apt install curl -y
+    3  curl -SSL https://get.docker.com/ | sh~
+    4  curl -SSL https://get.docker.com/ | sh
+    5  service docker status
+    6  usermod -aG docker ubuntu
+    7  docker --version
+    8  history
+    9  clear
+   10  docker run hello-world
+   11  docker ps
+   12  docker pull ubuntu
+   13  docker image ls
+   14  docker run -it --name ct1 ubuntu
+   15  docker run -it --name ct2 ubuntu
+   16  docker ps
+   17  docker ps -a
+ 
+
+    Docker Essentials
+----------------------------------------------------------------------
+Lab 1: Creating an EC2 Instance in AWS and Installing Docker
+ubuntu-latest
+free tier
+t2.micro
+----------------------------------------------------------------------
+##Installing Docker on Ubuntu operating system
+sudo hostnamectl set-hostname docker
+bash
+sudo su
+apt update -y
+apt install curl -y
+curl -SSL https://get.docker.com/ | sh
+service docker status
+usermod -aG docker ubuntu   # regular user i.e ubuntu
+docker --version
+-----------------------------------------------------------------------
+Lab 2: Basic Docker Commands
+-----------------------------------------------------------------------
+Task 1: Creating your first Docker container
+docker run hello-world
+Task 2: Basic Commands to run the Container in Interactive mode
+docker pull ubuntu
+docker image ls
+docker run -it --name ct1 ubuntu
+touch f1 f2 f3
+ls
+exit
+docker ps
+docker ps -a
+docker run -it --name ct2 ubuntu
+ 

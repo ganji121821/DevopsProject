@@ -1,0 +1,37 @@
+command to do
+-------------------    
+      kubectl version
+      docker version
+    6  kubectl get nodes
+    7  clear
+    8  vi deploy.yaml
+    9  ls
+   10  kubectl apply -f deploy.yaml
+   11  kubectl get deploy
+   12  k get pods
+   13  k get rc
+   14  k get rs
+   15  kubectl get all
+
+deploy.yaml
+----------------------------------
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-deployment
+  labels:
+    app: my-app
+spec:
+  selector:
+    matchLabels:
+      env: my-app
+  replicas: 3
+  template:
+    metadata:
+      name: nginx-2
+      labels:
+        env: my-app
+    spec:
+      containers:
+        - name: nginx
+          image: nginx

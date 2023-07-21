@@ -1,0 +1,16 @@
+to come out of doc:
+--------------------
+:wq
+press escape
+
+command to practice:
+---------------------
+kubectl version
+docker version
+kubectl run demo --image nginx
+kubectl get pods
+kubectl describe pod demo
+
+recommended:
+--------------
+kubernetes 1.27 | Playgrounds | Killercoda

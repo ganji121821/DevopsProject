@@ -1,0 +1,50 @@
+
+replication control yaml file content
+----------------------------------------
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: myapp-rc
+  labels:
+    app: my-app
+spec:
+  selector:
+    matchLabels:
+      env: my-app
+  replicas: 3
+  template:
+    metadata:
+      name: nginx-2
+      labels:
+        env: my-app
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
+
+command to work on:
+-----------------------
+vi rc.yaml
+    7  kubectl apply -f rc.yaml
+    8  kubectl get rs
+    9  kubectl get pods
+   10  kubectl describe pod myapp-rc-5qh77
+   11  kubectl get pods
+   12  kubectl delete pod myapp-rc-5qh77 
+   13  kubectl get pods
+   14  vi rc.yaml
+   15  kubectl apply -f rc.yaml
+   16  kubectl get rs
+   17  kubectl get pods
+   18  vi rc1.yaml
+   19  kubectl apply -f rc1.yaml
+   20  kubectl get pods
+   21  kubectl describe pod demo1-4b8cn  
+   22  vi rc1.yaml
+   23  vi demo.yaml
+   24  kubectl apply -f demo.yaml
+   25  kubectl get rs
+   26  kubectl get pods
+   27  kubectl describe pod demo123344-4ft7m
+   28  kubectl get pods
+   29  history

@@ -1,0 +1,35 @@
+excercise-1
+------------------------------
+1. Configure launch template
+2. Creating autoscaling group
+  --> Desired capacity=2
+  --> Min Capacity=1
+  --> Max Capacity=3
+3. Show the dashbaord of EC2 console
+4. Create a Target group with set of instances
+5. Regsiter this target group with application load balancer
+
+home work
+-------------------------------
+1.Create a SG- Inbound- http,ssh and https
+2.While creating Launch template select the above SG.
+3.Create ASG with this launch template
+4.Create a target group and register the instances
+5.Create  a Laod balancer
+
+
+dont include in launch template?
+confg routing? is the conf of targets?--next hop 
+what is Acm certificate?--security certificate.
+what is internat and internet facing?--internat is inside and the internet facing is like access the others ones.
+lambda function?..
+once registered instances cant be shared for another load balancers?--yes
+
+sampleload-83134047.eu-west-2.elb.amazonaws.com
+DNS name-loadbal-544078854.eu-west-2.elb.amazonaws.com
+
+
+is that endpoint and availability zones are same? or the base link address
+ 
+
+mysql -h database-1.cywnddidvlhr.eu-north-1.rds.amazonaws.com -P 3306 -u admin -p

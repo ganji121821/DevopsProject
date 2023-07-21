@@ -1,0 +1,20 @@
+create a pod yaml file
+-----------------------
+
+apiVersion: v1
+kind: Pod
+metadata:
+ name: myapp
+spec:
+  containers:
+    - name: democontainer
+      image: nginx
+
+command to work 
+---------------------
+kubectl apply -f pod.yaml
+
+recommended:
+-------------
+kubernetes.io
+

@@ -2,7 +2,7 @@ Task 1: Deploying MySQL and WordPress containers
  
 mkdir wordpress
 cd wordpress
-vi Dockerfile
+vi Dockerfile   
  
 #Content of Dockerfile to paste
  
